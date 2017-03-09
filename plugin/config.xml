@@ -1,10 +1,10 @@
 <plugin>
-	<name>iframe</name>
-	<package>iframe</package>
+	<name>Mura IFrame</name>
+	<package>muraiframe</package>
 	<directoryFormat>packageOnly</directoryFormat>
-	<version>1.12.3.0</version>
-	<provider>Blue River</provider>
-	<providerURL>http://www.blueriver.com</providerURL>
+	<version>1.2.0.0</version>
+	<provider>Nolan Erck / Blue River</provider>
+	<providerURL></providerURL>
 	<category>Application</category>
 
 	<extensions>
