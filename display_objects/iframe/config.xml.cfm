@@ -1,0 +1,1 @@
+<mura name="iFrame Widget" contenttypes="*" iconclass="mi-square-o" />

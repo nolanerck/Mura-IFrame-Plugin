@@ -1,0 +1,42 @@
+<plugin>
+	<name>iframe</name>
+	<package>iframe</package>
+	<directoryFormat>packageOnly</directoryFormat>
+	<version>1.12.3.0</version>
+	<provider>Blue River</provider>
+	<providerURL>http://www.blueriver.com</providerURL>
+	<category>Application</category>
+
+	<extensions>
+		<extension type="Custom" subtype="MuraIFramePlugin">
+			<attributeset name="MuraIFramePlugin">
+				<attribute name="plMode"
+							label="Plugin Mode"
+							type="select"
+							defaultvalue="Development"
+							optionlist="Development^Production"
+							optionlabellist="Development^Production" />
+				<attribute name="iframeHeight"
+							label="Height"
+							type="text"
+							defaultvalue="650"
+							optionlist=""
+							optionlabellist="" />
+				<attribute name="iframeWidth"
+							label="Width"
+							type="text"
+							defaultvalue="800"
+							optionlist=""
+							optionlabellist="" />
+			</attributeset>
+		</extension>
+	</extensions>
+
+
+	<eventHandlers>
+		<eventHandler event="onApplicationLoad" component="handler.mura" persist="true" />
+	</eventHandlers>
+	
+	<scripts></scripts>
+
+</plugin>
