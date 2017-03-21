@@ -11,7 +11,7 @@
 	</cfif>
 
 	<div class="nav-module-specific btn-group">
-		<a class="btn" href="?action=default" title="iFrame List">
+		<a class="btn" href="./" title="iFrame List">
 			<i class="mi-list"></i>
 			iframe List
 		</a>
@@ -22,7 +22,7 @@
 		
 	<cfoutput>
 		<form action="./" method="post" name="frmEditiFrame" id="frmEditiFrame">
-			<input type="hidden" name="action" id="action" value="actSave">
+			<input type="hidden" name="action" id="action" value="default.actSave">
 			<input type="hidden" name="iframeID" id="iframeID" value="#objFrameDetails.getiFrameID()#">
 
 			<div class="mura-control-group">
