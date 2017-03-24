@@ -1,5 +1,4 @@
 <cfparam name="objectparams.iframeID" default="">
-
 <cfset qryIFrames = $.getBean( "iframe" ).getFeed().sort( "Name", "ASC" ).getQuery() />
 
 <cf_objectconfigurator>
@@ -14,11 +13,9 @@
 				</cfloop>
 			</select>
         </div>
-
         <div class="mura-control-group">
             <button type="button" class="btn" id="btn-edit-current-iframe">Edit Current iFrame</button>
         </div>
-
         <div class="mura-control-group">
             <button type="button" class="btn" id="btn-open-custom-modal">Add New iFrame</button>
         </div>
