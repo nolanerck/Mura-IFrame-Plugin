@@ -44,7 +44,7 @@
 		        	<!--- This a object param that's value will be set dynamically --->
 	                <input type="number" min="0" name="heightoadd" id="heightoadd" class="objectParam" value="#objIFrame.getHeight()#" />
 				</div>
-<!---
+
 			    <div class="mura-control-group">
 					<label class="mura-control-label" for="widthtoadd">Width</label>
 	                <input type="number" min="0" name="widthtoadd" id="widthtoadd" class="objectParam" value="#objIFrame.getWidth()#" />
@@ -58,7 +58,7 @@
 						<option value="no" <cfif objIFrame.getScrolling() eq "no">selected="selected"</cfif>>No</option>
 					</select>
 				</div>
---->
+
 				<div class="mura-actions">
 					<div class="form-actions">
 						<input type="hidden" name="modalaction" id="modalaction" value="" />
@@ -82,8 +82,8 @@
   				data.nametoadd     = $( "##linknametoadd" ).val();
   				data.urltoadd 	   = $( "##urltoadd" ).val();
   				data.heightoadd    = $( "##heightoadd" ).val();
-  				<!--- data.widthtoadd    = $( "##widthtoadd" ).val();
-  				data.scrollingtoadd = $( "##scrollingtoadd" ).val(); --->
+  				data.widthtoadd    = $( "##widthtoadd" ).val();
+  				data.scrollingtoadd = $( "##scrollingtoadd" ).val();
 
 			    Mura.post( Mura.apiEndpoint, data ).then( function()
 			    {
@@ -92,27 +92,4 @@
 			});
 		});
 	</script>
-
-<!---	<script>
-		$(function(){
-			//This set the front end modal window width
-			// The default is 'standard'
-			//siteManager.setDisplayObjectModalWidth(800);
-
-			//This requests the current display object param values
-			siteManager.requestDisplayObjectParams(function(params){
-				//This is optional, it fire after Mura has already matched all params key to form elements with objectParam class by name
-			});
-
-			$("##updateBtn").click(function(){
-				// This collects the values of all form elements with a class of objectParam and assigns them 
-				// to the display object and then closes the dialog and re-init the sidebar configurator.cfm
-			    siteManager.updateDisplayObjectParams();
-
-		        //Optionally you can explicitly set the params to be set in the display object
-				// siteManager.updateDisplayObjectParams({var1:'test1'});
-			});
-		});
-	</script>
---->
-</cfoutput>
+`</cfoutput>
