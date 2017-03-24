@@ -6,7 +6,7 @@
 	<cfproperty name="url" type="string" required="true" length="1024" />
 	<cfproperty name="height" type="int" required="false" />
 	<cfproperty name="width" type="int" required="false" />
-	<cfproperty name="scrolling" type="string" required="false" />
+	<cfproperty name="scrolling" type="string" required="false" default="" />
 
 </cfcomponent>
 

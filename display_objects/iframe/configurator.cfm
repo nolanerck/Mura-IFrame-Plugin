@@ -1,6 +1,6 @@
 <cfparam name="objectparams.iframeID" default="">
 
-<cfset qryIFrames = $.getBean( "iframe" ).getFeed().getQuery() />
+<cfset qryIFrames = $.getBean( "iframe" ).getFeed().sort( "Name", "ASC" ).getQuery() />
 
 <cf_objectconfigurator>
     <cfoutput>
@@ -16,12 +16,33 @@
         </div>
 
         <div class="mura-control-group">
-            <button type="button" class="btn" id="open-custom-modal">Add New iFrame</button>
+            <button type="button" class="btn" id="btn-edit-current-iframe">Edit Current iFrame</button>
+        </div>
+
+        <div class="mura-control-group">
+            <button type="button" class="btn" id="btn-open-custom-modal">Add New iFrame</button>
         </div>
 
         <script>
-            $(function(){
-                $('##open-custom-modal').click(function(){
+            $(function()
+            {
+                $( '##btn-edit-current-iframe' ).click( function() 
+                {
+                    var _iFrameIDtoEdit = $( "##iframeID" ).val();
+
+                    if( _iFrameIDtoEdit.length == 0 )
+                    {
+                        alert( "#esapiEncode( 'javascript', 'You need to select an iFrame first.' )#" );
+                        return false;
+                    }
+                    else
+                    {
+                        //siteManager.openDisplayObjectModal( 'iframe/modal.cfm' );
+                        siteManager.openDisplayObjectModal( 'iframe/modal.cfm', { iFrameIDToEdit : _iFrameIDtoEdit } );
+                    }
+                });
+
+                $('##btn-open-custom-modal').click(function(){
                     siteManager.openDisplayObjectModal('iframe/modal.cfm');
                 });
             });
