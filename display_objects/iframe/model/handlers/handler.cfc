@@ -45,7 +45,6 @@ component extends="mura.cfobject"
 		}
 		
 		objIFrame.save();
-
 		return objIFrame.getErrors().toString();
 	}
 }
