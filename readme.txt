@@ -15,11 +15,11 @@ Once it's installed, you should have an "IFrame" option in your "Plugins" menu. 
 IFrames that you want to use on yoru site.  This should be pretty straight forward.
 
 On the front-end, you'll have an "IFrame Widget" Display Object.  Drag the IFrame Widget onto any
-Display Region on your site, select an IFrom from the drop-down on the right and it should appear. Remember
+Display Region on your site, select an IFrame from the drop-down on the right and it should appear. Remember
 to click the "Save/Publish" button for that page to save your changes.
 
 Also on the front-end "IFrame Widget", there is an "Add new IFrame" button in the Configurator on the 
-right-hand side.  This basically let's you add IFrames the same way the Admin screen does.  If it's
+right-hand side.  This basically lets you add IFrames the same way the Admin screen does.  If it's
 easier to do all of your work from the front-end and add IFrames "as you go", you can do so here.  
 The IFrames get stored in the exact same way as if they were added in the Admin screen originally.
 
